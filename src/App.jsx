@@ -3,6 +3,7 @@ import { useLocation, useRoutes } from 'react-router-dom'
 import routes from './router'
 import AppHeader from './components/app-header'
 import AppFooter from './components/app-footer'
+import Ff from './views/ff'
 const App = memo(() => {
   const location = useLocation();
   useEffect(() => {
@@ -18,6 +19,7 @@ const App = memo(() => {
         {useRoutes(routes)}
       </div>
       <AppFooter></AppFooter>
+      <Ff></Ff>
     </div>
   )
 })
